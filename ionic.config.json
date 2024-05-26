@@ -1,0 +1,8 @@
+{
+  "name": "eo-grid-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "17822234"
+}
