@@ -7,44 +7,39 @@
 <ion-content>
 
   <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-2 p-2">
-    <ng-container *ngFor="let item of [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]">
+    <ng-container *ngFor="let item of [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]">
 
       <!-- place divs here -->
 
-      <div class="w-full">
-        <div class="group relative rounded pb-[40%]">
-          <!-- card start -->
-          <div class="m-2 group absolute inset-0 flex rounded-md overflow-hidden shadow-lg border-2 border-gray-200 cursor-pointer">
-            <div class="relative aspect-square w-2/5 flex-none">
-              <div class="absolute inset-0">
-                <span class="thumb-box">
-                  <img class="w-full"
-                    src="https://qt.extraorder.app/api/assets/5674318776238080/NVivv-wLz8ThQoaZW9TDs31nB0VeC2oIUpAPe-bnw5A.webp">
-                </span>
-              </div>
+      <div class="group w-full relative rounded pb-[40%]">
+
+        <!-- card start -->
+        <div
+          class="item-block m-2 group absolute inset-0 flex rounded-md overflow-hidden shadow-lg border-2 border-gray-200 cursor-pointer">
+          <div class="relative  w-2/5 flex-none">
+            <div class="absolute inset-0">
+              <img class="w-full" src="https://qt.extraorder.app/api/assets/5674318776238080/NVivv-wLz8ThQoaZW9TDs31nB0VeC2oIUpAPe-bnw5A.webp">
             </div>
-            <div class="flex-1 overflow-hidden">
-              <div
-                class="relative  h-full flex flex-col justify-between p-3 transition-colors duration-300 ease-out md:px-4">
-                <div class="flex-1">
-                  <h3 class="mb-1 capitalize my-label-md">
-                    <span class="line-clamp-2 text-lg text-black">Sweet Satay Chicken </span>
-                  </h3>
-                  <div class="transition-colors duration-300 ease-out my-body-sm ">
-                    <span class="line-clamp-2">Chicken on a sweet chilli and peanut satay base with pineapple
-                      pieces</span>
-                  </div>
-                </div>
-                <div class="absolute inset-x-0 bottom-0  p-3 ">
-                  <div class="flex justify-between w-full">
-                    <span class="text-lg">$21.00</span>
-                    <span class="">
-                      <a href="#" class=" rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
-                        Add to Cart
-                      </a>
-                    </span>
-                  </div>
-                </div>
+          </div>
+          <div
+            class="relative  h-full flex flex-col justify-between p-3 transition-colors duration-300 ease-out md:px-4">
+            <div>
+              <h3 class="mb-1">
+                <span class="line-clamp-2 text-lg text-black">Sweet Satay Chicken </span>
+              </h3>
+              <p class="line-clamp-2 text-sm font-light text-gray-600">Chicken on a sweet chilli and peanut satay
+                base with pineapple pieces
+              </p>
+            </div>
+            <div class="absolute inset-x-0 bottom-0  p-3 ">
+              <div class="flex justify-between w-full">
+                <span class="text-lg">$21.00</span>
+                <span class="">
+                  <button
+                    class=" bg-[#76871c] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">
+                    Add to Cart
+                  </button>
+                </span>
               </div>
             </div>
           </div>
@@ -56,9 +51,5 @@
 
     </ng-container>
   </div>
-
-  <!-- <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-2 p-2">
-    
-  </div> -->
 
 </ion-content>
