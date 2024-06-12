@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="">
+    <ion-title>Item List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-2 p-2">
+    <ng-container *ngFor="let item of [].constructor(40)">
+
+      <!-- place divs here -->
+
+      <div class="group relative w-full rounded pb-[40%]">
+        <div class="item-block-tw-effect group absolute inset-0 m-2 flex cursor-pointer overflow-hidden rounded-md border-2 border-gray-200 shadow-lg hover:bg-gray-100">
+          <div class="relative w-2/5 flex-none">
+            <div class="absolute inset-0">
+              <img class="w-full" src="https://qt.extraorder.app/api/assets/5674318776238080/NVivv-wLz8ThQoaZW9TDs31nB0VeC2oIUpAPe-bnw5A.webp" />
+            </div>
+          </div>
+          <div class="relative flex h-full flex-col p-3 md:px-4">
+            <div>
+              <h3 class="mb-1">
+                <span class="line-clamp-2 text-lg text-black max-sm:text-sm">Sweet Satay Chicken </span>
+              </h3>
+              <p class="line-clamp-2 text-sm font-light text-gray-600 max-sm:line-clamp-1 max-xs:hidden">Chicken on a sweet chilli and peanut satay base with pineapple pieces</p>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 p-3">
+              <div class="flex w-full justify-between max-xs:hidden">
+                <span class="text-lg">$21.00</span>
+                <span class="">
+                  <button class="bg-[#76871c] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90">Add to Cart</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </ng-container>
+  </div>
+
+</ion-content>
