@@ -6,13 +6,58 @@
 
 <ion-content>
 
-  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-[repeat(auto-fill,minmax(456px,1fr))] gap-2 p-2">
+  <div class="flex w-full ">
+    <div class="md:max-w-1/2 hidden flex-1 md:block bg-slate-500">
+      <div class=""> Large Image</div>
+    </div>
+    <div class="md:max-w-1/2 relative w-full flex-1 bg-pink-300">
+      <div class="">
+
+        <!-- Category blocks -->
+        <div
+          class="grid sm:grid-cols-1  md:grid-cols-[repeat(auto-fill,minmax(456px,1fr))] gap-2 p-2">
+          <ng-container *ngFor="let item of [].constructor(10) index as i">
+
+            <div class="group relative w-full rounded pb-[40%]">
+              <div [routerLink]="['/itemlist']"
+                class="item-block-tw-effect group absolute inset-0 m-2 flex cursor-pointer overflow-hidden rounded-md border-2 border-gray-200 shadow-lg hover:bg-gray-100">
+                <div *ngIf="!((i+1)<=4)" class="relative w-2/5 flex-none ">
+                  <div class="absolute inset-0">
+                    <img class="w-full"
+                      src="https://qt.extraorder.app/api/assets/5674318776238080/NVivv-wLz8ThQoaZW9TDs31nB0VeC2oIUpAPe-bnw5A.webp" />
+                  </div>
+                </div>
+                <div class="flex-1 h-full flex-col text-center place-content-center  md:px-4">
+                  <h3 class="mb-1">
+                    <span class="line-clamp-2 text-sm text-black max-sm:text-sm">Category {{i+1}}</span>
+                  </h3>
+                  <span class="text-4xl font-bold max-xs:hidden">
+                    &rarr;
+                  </span>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Category Blocks -->
+  <!-- <div
+    class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-[repeat(auto-fill,minmax(456px,1fr))] gap-2 p-2">
     <ng-container *ngFor="let item of [].constructor(10) index as i">
 
-      <!-- place divs here -->
-
       <div class="group relative w-full rounded pb-[40%]">
-        <a href="/itemlist" 
+        <a href="/itemlist"
           class="item-block-tw-effect group absolute inset-0 m-2 flex cursor-pointer overflow-hidden rounded-md border-2 border-gray-200 shadow-lg hover:bg-gray-100">
           <div *ngIf="!((i+1)<=4)" class="relative w-2/5 flex-none ">
             <div class="absolute inset-0">
@@ -30,9 +75,10 @@
           </div>
         </a>
       </div>
-
-
     </ng-container>
-  </div>
+  </div> -->
+
+
+
 
 </ion-content>
