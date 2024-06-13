@@ -4,19 +4,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="">
 
-  <div class="flex w-full ">
-    <div class="md:max-w-1/2 hidden flex-1 md:block bg-slate-500">
-      <div class=""> Large Image</div>
+  <div class="flex w-full min-h-screen md:flex-row">
+    <!-- first half -->
+    <div class="md:max-w-1/2 hidden flex-1 md:block ">
+      <div class="w-full h-screen bg-center bg-no-repeat bg-cover sticky top-2 "
+        style="background-image: url('https://cdn.mryum.com/prod/96a7b52e-2520-4430-9ad2-8d9cbff09165');">
+        <div class="w-full h-full bg-black/40 items-center justify-center flex">
+          <img class="w-2/3 aspect-square border-4 rounded-3xl"
+          src="https://dynamic.brandcrowd.com/asset/logo/937e0eec-eebf-4294-9029-41619d6c3786/logo-search-grid-1x?logoTemplateVersion=1&v=638369310055500000" alt="">
+        </div>
+      </div>
     </div>
-    <div class="md:max-w-1/2 relative w-full flex-1 bg-pink-300">
+    <!-- second half -->
+    <div class="md:max-w-1/2 relative w-full flex-1  ">
       <div class="">
 
         <!-- Category blocks -->
         <div
           class="grid sm:grid-cols-1  md:grid-cols-[repeat(auto-fill,minmax(456px,1fr))] gap-2 p-2">
-          <ng-container *ngFor="let item of [].constructor(10) index as i">
+          <ng-container *ngFor="let item of [].constructor(50) index as i">
 
             <div class="group relative w-full rounded pb-[40%]">
               <div [routerLink]="['/itemlist']"
